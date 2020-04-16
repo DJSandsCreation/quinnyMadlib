@@ -1,0 +1,21 @@
+body {
+  background-image: url(quinn.jpg);
+}
+
+
+h1 {
+  color: rgb(238, 153, 212);
+  font-family: 'Chewy', cursive;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+h2 {
+  color: rgb(10, 151, 245);
+  font-family: 'Alfa Slab One', cursive;
+}
+
+h3 {
+  color: rgb(238, 153, 212);
+  font-family: 'Chewy', cursive;
+  font-size: 2em;
+}

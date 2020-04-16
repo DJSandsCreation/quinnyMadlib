@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chewy&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>DJS Mad Libs</title>
+</head>
+
+<body>
+
+  <!--main content-->
+  <div class="container rounded mt-2 mb-2 pt-5 pb-5 text-center text-light bg-light">
+    <h2 class="display-3">DJS Mad Libs</h2>
+    <button type="button" class="btn btn-danger mt-3 btn-lg" data-toggle="modal" data-target="#first_modal">
+      <h3 class="text-primary">Let's
+        play!</h3>
+    </button>
+    <h2 class="mt-2 mb-2 pt-5 pb-5 text-center display-3">For the love of Mr J .. . ... </h2>
+
+  </div>
+
+  <!--first-modal-->
+  <div class="modal fade" id="first_modal" tabindex="-1" role="dialog" aria-labelledby="first_modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="first_modalLabel">Enter a thing that flys:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" id="thing-input">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="first" data-dismiss="modal" data-toggle="modal"
+            data-target="#second_modal">Next step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--second-modal-->
+  <div class="modal fade" id="second_modal" tabindex="-1" role="dialog" aria-labelledby="second_modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="second_modalLabel">Enter a noun ( a thing ):</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" id="thing2-input">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="second" data-dismiss="modal" data-toggle="modal"
+            data-target="#third_modal">Next step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--third-modal-->
+  <div class="modal fade" id="third_modal" tabindex="-1" role="dialog" aria-labelledby="third_modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="third_modalLabel">Enter an adjective ( descriptive word ):</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" id="adjective-input">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="third" data-dismiss="modal" data-toggle="modal"
+            data-target="#fourth_modal">Next step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--fourth-modal-->
+  <div class="modal fade" id="fourth_modal" tabindex="-1" role="dialog" aria-labelledby="fourth_modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fourth_modalLabel">Enter a a body part:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" id="noun-input">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="fourth" data-dismiss="modal">Finish!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Output sentence-->
+  <h1 class="text-center m-2 p-5 text-light" id="sentence"></h1>
+
+
+  <script src="main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
